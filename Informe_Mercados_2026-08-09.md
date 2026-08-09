@@ -1,5 +1,5 @@
 # Informe Diario de Mercados - 09/08/2026
-_Generado automaticamente a las 12:19 (hora Argentina)_
+_Generado automaticamente a las 12:25 (hora Argentina)_
 
 ## Mercados generales
 | Activo | Ultimo | Cierre anterior | Variacion |
@@ -33,9 +33,9 @@ _Generado automaticamente a las 12:19 (hora Argentina)_
 ## Criptomonedas
 | Activo | Ultimo | Cierre anterior | Variacion |
 |---|---|---|---|
-| Bitcoin (BTC) | 65,185.00 | 64,908.48 | +0.43% |
-| Ethereum (ETH) | 1,924.92 | 1,915.44 | +0.49% |
-| BNB | 608.44 | 600.41 | +1.34% |
+| Bitcoin (BTC) | 65,194.49 | 64,908.48 | +0.44% |
+| Ethereum (ETH) | 1,924.94 | 1,915.44 | +0.50% |
+| BNB | 608.78 | 600.41 | +1.39% |
 | Solana (SOL) | 76.85 | 75.97 | +1.16% |
 | XRP | 1.04 | 1.04 | +0.27% |
 
