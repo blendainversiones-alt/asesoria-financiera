@@ -121,7 +121,10 @@ def build_report():
     hora = now.strftime("%H:%M")
 
     parts = [
-        f"# Informe Diario de Mercados - {fecha_larga}",
+        "# Blenda Inversiones",
+        "_Estas a un click de tu independencia financiera_",
+        "",
+        f"## Informe Diario de Mercados - {fecha_larga}",
         f"_Generado automaticamente a las {hora} (hora Argentina)_",
         "",
         "## Mercados generales",
@@ -142,6 +145,8 @@ def build_report():
         "",
         "---",
         "_Fuentes: Yahoo Finance, DolarAPI, Ambito Financiero. Informe generado automaticamente; verificar datos antes de tomar decisiones de inversion._",
+        "",
+        "_Blenda Inversiones - blendainversiones.com_",
     ]
     return "\n".join(parts)
 
