@@ -146,6 +146,22 @@ def build_report():
     return "\n".join(parts)
 
 
+def commit_report(out_path):
+    import subprocess
+
+    repo_dir = out_path.parent
+    try:
+        subprocess.run(["git", "add", out_path.name], cwd=repo_dir, check=True)
+        subprocess.run(
+            ["git", "commit", "-m", f"Informe diario {datetime.now().strftime('%Y-%m-%d')}"],
+            cwd=repo_dir,
+            check=True,
+        )
+        subprocess.run(["git", "push"], cwd=repo_dir, check=True)
+    except subprocess.CalledProcessError as exc:
+        print(f"Aviso: no se pudo commitear/subir el informe ({exc})")
+
+
 def main():
     report = build_report()
     filename = f"Informe_Mercados_{datetime.now().strftime('%Y-%m-%d')}.md"
@@ -154,6 +170,7 @@ def main():
     out_path = Path(__file__).parent / filename
     out_path.write_text(report, encoding="utf-8")
     print(f"Informe generado: {out_path}")
+    commit_report(out_path)
 
 
 if __name__ == "__main__":
